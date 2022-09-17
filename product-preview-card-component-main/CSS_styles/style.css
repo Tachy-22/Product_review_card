@@ -1,0 +1,226 @@
+html,
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: hsl(30, 38%, 92%);
+}
+
+div.primary_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 800px;
+  background: hsl(0, 0%, 100%);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+img {
+  width: 400px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.main_contents {
+  height: 600px;
+  /* background-color: red; */
+}
+.main_texts {
+  text-align: left;
+  height: 420px;
+  width: 350px;
+  position: relative;
+  padding: 25px;
+  padding-top: 0;
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+}
+.preview {
+  letter-spacing: 5px;
+  font-size: 18px;
+  font-weight: 700;
+}
+/* Button css code */
+button {
+  width: 85%;
+  height: 75px;
+  background: rgb(6, 91, 32);
+  border-radius: 20px;
+  color: white;
+  font-size: 9px;
+  margin-top: 0px;
+  transition: transform 0.2s ease;
+}
+button:hover {
+  width: 300px;
+  height: 100px;
+  box-shadow: 0px 20px 10px grey;
+  transform: translate(0px, 10px);
+}
+/* ------------------------------------------------ */
+
+.price_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#heading {
+  width: 250px;
+  font-size: 42px;
+  font-family: "Fraunces", serif;
+  color: black;
+}
+#description {
+  width: 270px;
+  font-size: 16px;
+  font-weight: 300px;
+  margin-top: 20px;
+}
+.prices {
+  position: relative;
+  width: 400px;
+  height: 70px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+}
+#price1 {
+  color: hsl(158, 36%, 37%);
+  font-size: 45px;
+  font-family: "Fraunces", serif;
+}
+
+#price2 {
+  padding-left: 40px;
+  right: 0;
+  text-decoration: line-through;
+  font-size: 15px;
+}
+/* Cart css code */
+div.cart_container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* Cart css code gotten online */
+.cart {
+  background-image: url("data:image/svg+xml,%3Csvg width='15' height='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z' fill='%23FFF'/%3E%3C/svg%3E");
+
+  width: 1.6em;
+  height: 1.75em;
+  margin: 15px;
+}
+.cart_container:hover {
+  color: rgb(180, 241, 249);
+}
+/* ----------------------------------------- */
+
+/* styling for attributes */
+.attribution {
+  position: absolute;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* styling for attributes */
+
+@media screen and (max-width: 600px) {
+ 
+  div.primary_container {
+    flex-direction: column;
+
+    width: 400px;
+    background: hsl(0, 0%, 100%);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  img {
+    height: 320px;
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 400px;
+  }
+  .primary_container {
+    height: 800px;
+  }
+  .main_contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .price_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #heading {
+    width: 300px;
+    height: 80px;
+    font-size: 30px;
+    font-family: "Fraunces", serif;
+    color: black;
+    margin-bottom: 0;
+    margin: 0;
+    /* background-color: yellow; */
+    padding: 0;
+  }
+  #description {
+    width: 270px;
+    font-size: 16px;
+    font-weight: 300px;
+
+    /* background-color: red; */
+  }
+  .main_contents {
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* background-color: red; */
+
+  .price_container {
+    /* background-color: green; */
+    height: 40px;
+    margin-bottom: 0;
+  }
+  button {
+    /* background: blue; */
+    width: 350px;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+  }
+  button:hover {
+    box-shadow: 0px 20px 5px -10px rgb(1, 49, 16);
+  }
+  .main_texts {
+    height: 310px;
+    /* background-color: orange; */
+    margin: 0;
+    padding: 0;
+  }
+}
